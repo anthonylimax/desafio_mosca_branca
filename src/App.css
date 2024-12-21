@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+section {
+  background-color: #fff;
+  padding: 2rem;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  background: #e9ecef;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #495057;
+}
+
+input[type="email"],
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+select {
+  background: #fff;
+  appearance: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+section > *:not(:last-child) {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.modal-error{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(61, 61, 61, 0.445);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.modal-block{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 400px;
+  width: 80%;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 100%;
+  background-color: white;
+  animation: fadeIn 0.2s;
+  border-radius: 16px;
+}
